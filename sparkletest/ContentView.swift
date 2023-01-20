@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+    let bundle = Bundle.main
+    let version = bundle.object(forInfoDictionaryKey: "CFBundleVersion") as! String
 
 struct ContentView: View {
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Version: \(version)")
         }
         .padding()
     }

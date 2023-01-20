@@ -11,6 +11,7 @@
 		CAEA2BEE297B4EAC003AB2C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2BED297B4EAC003AB2C3 /* ContentView.swift */; };
 		CAEA2BF0297B4EAD003AB2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2BEF297B4EAD003AB2C3 /* Assets.xcassets */; };
 		CAEA2BF3297B4EAD003AB2C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2BF2297B4EAD003AB2C3 /* Preview Assets.xcassets */; };
+		CAEA2BFC297B5FA7003AB2C3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = CAEA2BFB297B5FA7003AB2C3 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEA2BFC297B5FA7003AB2C3 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = sparkletest;
+			packageProductDependencies = (
+				CAEA2BFB297B5FA7003AB2C3 /* Sparkle */,
+			);
 			productName = sparkletest;
 			productReference = CAEA2BE8297B4EAC003AB2C3 /* sparkletest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = CAEA2BDF297B4EAC003AB2C3;
+			packageReferences = (
+				CAEA2BFA297B5FA7003AB2C3 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = CAEA2BE9297B4EAC003AB2C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,7 +276,7 @@
 				CODE_SIGN_ENTITLEMENTS = sparkletest/sparkletest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"sparkletest/Preview Content\"";
 				DEVELOPMENT_TEAM = 6L9QQBQLVU;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -295,7 +303,7 @@
 				CODE_SIGN_ENTITLEMENTS = sparkletest/sparkletest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"sparkletest/Preview Content\"";
 				DEVELOPMENT_TEAM = 6L9QQBQLVU;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAEA2BFA297B5FA7003AB2C3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAEA2BFB297B5FA7003AB2C3 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAEA2BFA297B5FA7003AB2C3 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAEA2BE0297B4EAC003AB2C3 /* Project object */;
 }

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct sparkletestApp: App {
+    @StateObject var updaterViewModel = UpdaterViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }
+        .commands {
+            CommandGroup(after: .appInfo) {
+                CheckForUpdatesView(updaterViewModel: updaterViewModel)
+            }
         }
     }
 }

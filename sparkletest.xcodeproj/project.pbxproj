@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA94F4FD297B649800388A90 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA94F4FC297B649800388A90 /* README.md */; };
 		CAEA2BEC297B4EAC003AB2C3 /* sparkletestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2BEB297B4EAC003AB2C3 /* sparkletestApp.swift */; };
 		CAEA2BEE297B4EAC003AB2C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2BED297B4EAC003AB2C3 /* ContentView.swift */; };
 		CAEA2BF0297B4EAD003AB2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2BEF297B4EAD003AB2C3 /* Assets.xcassets */; };
 		CAEA2BF3297B4EAD003AB2C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2BF2297B4EAD003AB2C3 /* Preview Assets.xcassets */; };
 		CAEA2BFC297B5FA7003AB2C3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = CAEA2BFB297B5FA7003AB2C3 /* Sparkle */; };
+		CAEA2BFE297B63BE003AB2C3 /* checkForUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2BFD297B63BE003AB2C3 /* checkForUpdatesView.swift */; };
+		CAEA2C00297B63E7003AB2C3 /* updaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2BFF297B63E7003AB2C3 /* updaterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA94F4FC297B649800388A90 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CAEA2BE8297B4EAC003AB2C3 /* sparkletest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkletest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA2BEB297B4EAC003AB2C3 /* sparkletestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkletestApp.swift; sourceTree = "<group>"; };
 		CAEA2BED297B4EAC003AB2C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAEA2BEF297B4EAD003AB2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEA2BF2297B4EAD003AB2C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAEA2BF4297B4EAD003AB2C3 /* sparkletest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sparkletest.entitlements; sourceTree = "<group>"; };
+		CAEA2BFD297B63BE003AB2C3 /* checkForUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkForUpdatesView.swift; sourceTree = "<group>"; };
+		CAEA2BFF297B63E7003AB2C3 /* updaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updaterViewModel.swift; sourceTree = "<group>"; };
+		CAEF9D93297B675800CB7E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 		CAEA2BDF297B4EAC003AB2C3 = {
 			isa = PBXGroup;
 			children = (
+				CA94F4FC297B649800388A90 /* README.md */,
 				CAEA2BEA297B4EAC003AB2C3 /* sparkletest */,
 				CAEA2BE9297B4EAC003AB2C3 /* Products */,
 			);
@@ -54,6 +62,9 @@
 		CAEA2BEA297B4EAC003AB2C3 /* sparkletest */ = {
 			isa = PBXGroup;
 			children = (
+				CAEF9D93297B675800CB7E40 /* Info.plist */,
+				CAEA2BFD297B63BE003AB2C3 /* checkForUpdatesView.swift */,
+				CAEA2BFF297B63E7003AB2C3 /* updaterViewModel.swift */,
 				CAEA2BEB297B4EAC003AB2C3 /* sparkletestApp.swift */,
 				CAEA2BED297B4EAC003AB2C3 /* ContentView.swift */,
 				CAEA2BEF297B4EAD003AB2C3 /* Assets.xcassets */,
@@ -135,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA94F4FD297B649800388A90 /* README.md in Resources */,
 				CAEA2BF3297B4EAD003AB2C3 /* Preview Assets.xcassets in Resources */,
 				CAEA2BF0297B4EAD003AB2C3 /* Assets.xcassets in Resources */,
 			);
@@ -148,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEA2BEE297B4EAC003AB2C3 /* ContentView.swift in Sources */,
+				CAEA2BFE297B63BE003AB2C3 /* checkForUpdatesView.swift in Sources */,
+				CAEA2C00297B63E7003AB2C3 /* updaterViewModel.swift in Sources */,
 				CAEA2BEC297B4EAC003AB2C3 /* sparkletestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +296,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sparkletest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sparkletest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

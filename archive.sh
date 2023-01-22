@@ -2,7 +2,7 @@
 
 APP_NAME="sparkletest"
 # Archive the app with Xcode
-xcodebuild archive -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release -derivedDataPath build -archivePath build/sparkletest.xcarchive
+xcodebuild archive -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release -derivedDataPath build -archivePath build/$APP_NAME.xcarchive
 
 # Create the exportOptions.plist file
 EXPORT_OPTIONS_PLIST="exportOptions.plist"

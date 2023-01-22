@@ -1,7 +1,8 @@
 #!/bin/bash
 
+APP_NAME="sparkletest"
 # Archive the app with Xcode
-xcodebuild archive -project sparkletest.xcodeproj -scheme sparkletest -configuration Release -derivedDataPath build -archivePath build/sparkletest.xcarchive
+xcodebuild archive -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release -derivedDataPath build -archivePath build/sparkletest.xcarchive
 
 # Create the exportOptions.plist file
 EXPORT_OPTIONS_PLIST="exportOptions.plist"
@@ -27,7 +28,7 @@ cat > $EXPORT_OPTIONS_PLIST <<EOF
 EOF
 
 # Export the archive to the destination directory with the exportOptions.plist file
-xcodebuild -exportArchive -archivePath build/sparkletest.xcarchive -exportPath $HOME/Desktop/sparkletest -exportOptionsPlist $EXPORT_OPTIONS_PLIST
+xcodebuild -exportArchive -archivePath build/$APP_NAME.xcarchive -exportPath $HOME/Desktop/$APP_NAME -exportOptionsPlist $EXPORT_OPTIONS_PLIST
 
 # VERSION=$(xcodebuild -project sparkletest.xcodeproj -showBuildSettings | grep "MARKETING_VERSION" | awk '{print $3}')
 

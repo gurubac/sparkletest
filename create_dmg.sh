@@ -1,10 +1,9 @@
+# Description: Create a DMG file from the app archive
+
+source shellconfig.sh
+
 # Call archive.sh to archive the app
 ./archive.sh
-
-APP_NAME="sparkletest"
-
-ARCHIVE_APP_DIR="$HOME/Desktop/$APP_NAME"
-TEAM_ID=$(security find-identity -v -p codesigning | grep "Apple Development" | awk -F'[()]' '{print $3}')
 
 # Create the DMG, from build directory and put it in the destination directory
 create-dmg \

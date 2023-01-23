@@ -8,7 +8,8 @@
             <sparkle:version>1.0.3</sparkle:version>
             <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://gurubac.github.io/sparkletest/rw.sparkletest.dmg" length="30447104" type="application/octet-stream" sparkle:edSignature="g7O8BrGmt1TMr60qlyWqi9ulaHAnwjZ/TSPwTQJKtolF1zzJU4jnhwOP2UeAWkc5Iz2kKIG/zGuIDPAE6uCgDQ=="/>
+            <enclosure url="https://gurubac.github.io/sparkletest/rw.sparkletest.dmg" length="30447104" type="application/octet-stream" sparkle:edSignature="J0uEYG1tRvupMrfK2i0X/5fWF3zeuPIvy/rNYsAgiR42MpJkx+DDTV92ojmkQXB85DvemMx3i1XHCTW0/Z+LAg=="/>
+            <sparkle:fullReleaseNotesLink>https://github.com/gurubac/sparkletest/releases</sparkle:fullReleaseNotesLink>
             <sparkle:fullReleaseNotesLink>https://github.com/gurubac/sparkletest/releases</sparkle:fullReleaseNotesLink>
             <sparkle:fullReleaseNotesLink>https://github.com/gurubac/sparkletest/releases</sparkle:fullReleaseNotesLink>
             <sparkle:fullReleaseNotesLink>https://github.com/gurubac/sparkletest/releases</sparkle:fullReleaseNotesLink>

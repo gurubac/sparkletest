@@ -1,2 +1,3 @@
 exportOptions.plist
 build/
+.env

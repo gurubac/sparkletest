@@ -7,6 +7,7 @@ source shellconfig.sh
 
 # Create the DMG, from build directory and put it in the destination directory
 create-dmg \
+    --skip-jenkins \
     --volname "$APP_NAME" \
     --codesign $TEAM_ID \
     "$ARCHIVE_APP_DIR/$APP_NAME.dmg" \

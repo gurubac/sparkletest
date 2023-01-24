@@ -3,7 +3,11 @@
 
 source shellconfig.sh
 
+echo "Starting to archive $APP_NAME to $ARCHIVE_APP_DIR"
+
 # Clean the build directory
+echo "Running xcodebuild clean..."
+
 xcodebuild clean -project $APP_NAME.xcodeproj -scheme $APP_NAME
 
 # Change the version number in project.pbxproj using sed instead of agvtool because it doesn't work for xcode 13+ properly

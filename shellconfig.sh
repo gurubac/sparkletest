@@ -4,7 +4,7 @@
 ##############################################
 # Xcode configuration
 # APP_VERSION is the version number of the app (This is the only thing you should change, the rest of the file can be left as is unless you want to change the app name or the destination directory for the archive)
-APP_VERSION="1.0.22"
+APP_VERSION="1.0.50"
 
 # Set the app name and destination directory for the archive
 APP_NAME="sparkletest"
@@ -17,7 +17,7 @@ TEAM_ID=$(security find-identity -v -p codesigning | grep "Apple Development" | 
 EXPORT_OPTIONS_PLIST="exportOptions.plist"
 
 ##############################################
-# Github configuration for generate_appcast.sh 
+# Github configuration for generate_appcast.sh
 GITHUB_USER="gurubac"
 RELEASE_FILE_EXTENSION="dmg"
 
@@ -34,4 +34,3 @@ SPARKLE_RELEASE_NOTES_LINK="https://github.com/$GITHUB_USER/$APP_NAME/releases/t
 
 # For full release notes
 SPARKLE_FULL_RELEASE_NOTES_LINK="https://github.com/$GITHUB_USER/$APP_NAME/releases"
-

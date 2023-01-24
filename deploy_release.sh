@@ -18,13 +18,13 @@ if git rev-parse "v$APP_VERSION" >/dev/null 2>&1; then
     exit 1
 fi
 
-# Create a new tag for the release and push it to GitHub
-git tag v$APP_VERSION && git push --tags
-
 # Commit the changes to the appcast.xml file and push to GitHub
 git add appcast.xml
-git commit -m "Update appcast.xml to v$APP_VERSION"
+git commit -m "Update appcast.xml to v$APP_VERSION - deploy_release.sh"
 git push
+
+# Create a new tag for the release and push it to GitHub
+git tag v$APP_VERSION && git push --tags
 
 # Create a new release on GitHub
 github-release release \
@@ -35,8 +35,25 @@ github-release release \
     --description "Release v$APP_VERSION. This is an automatic release created by the deploy_release.sh script. Check back later for updated release notes."
 
 # Delete local tags to avoid conflicts from remote repository tags (AFTER CREATING RELEASE)
-# If you prune before right creating the release, the tag will not be able to be uploaded to the remote repository
+# If you prune right before creating the release, the tag will not be attached to the release
 git fetch --prune --prune-tags
+
+# Wait for the tag to be created on GitHub before uploading the archive to the release
+start_time=$(date +%s)
+while true; do
+    if github-release info -u $GITHUB_USER -r $APP_NAME | grep -q "v$APP_VERSION"; then
+        echo "Tag v$APP_VERSION exists, proceeding with uploading $APP_NAME.$RELEASE_FILE_EXTENSION to the release..."
+        break
+    fi
+    current_time=$(date +%s)
+    elapsed_time=$((current_time - start_time))
+    if [ $elapsed_time -gt 60 ]; then
+        echo "Tag v$APP_VERSION does not exist after waiting $elapsed_time seconds, exiting program..."
+        exit 1
+    fi
+    echo "Tag v$APP_VERSION does not exist, waiting 5 (waited $elapsed_time seconds so far)"
+    sleep 5
+done
 
 # Upload the archive to the release
 github-release upload \
@@ -45,3 +62,5 @@ github-release upload \
     --tag v$APP_VERSION \
     --name "$APP_NAME.$RELEASE_FILE_EXTENSION" \
     --file "$ARCHIVE_APP_DIR/$APP_NAME.$RELEASE_FILE_EXTENSION"
+
+echo "Success! Release v$APP_VERSION has been deployed to GitHub."

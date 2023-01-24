@@ -1,13 +1,14 @@
+#!/bin/bash
 # Description: This file contains the configuration for the shell scripts
 
 ##############################################
 # Xcode configuration
 # APP_VERSION is the version number of the app (This is the only thing you should change, the rest of the file can be left as is unless you want to change the app name or the destination directory for the archive)
-APP_VERSION="1.0.5"
+APP_VERSION="1.0.8"
 
 # Set the app name and destination directory for the archive
 APP_NAME="sparkletest"
-ARCHIVE_APP_DIR="$HOME/Desktop/$APP_NAME"
+ARCHIVE_APP_DIR="$HOME/Desktop/$APP_NAME"_v"$APP_VERSION"
 
 # For the free developer account, the signing certificate is "Apple Development," so if you change to a paid apple developer account, you have to change the grep string to something else
 SIGNING_CERTIFICATE=$(security find-identity -v -p codesigning | grep "Apple Development" | awk '{print $2}')

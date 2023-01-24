@@ -38,4 +38,4 @@ cat >$EXPORT_OPTIONS_PLIST <<EOF
 EOF
 
 # Export the archive to the destination directory with the exportOptions.plist file
-xcodebuild -exportArchive -archivePath build/$APP_NAME.xcarchive -exportPath $HOME/Desktop/$APP_NAME -exportOptionsPlist $EXPORT_OPTIONS_PLIST
+xcodebuild -exportArchive -archivePath build/$APP_NAME.xcarchive -exportPath $ARCHIVE_APP_DIR -exportOptionsPlist $EXPORT_OPTIONS_PLIST

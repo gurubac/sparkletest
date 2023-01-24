@@ -3,13 +3,13 @@
     <channel>
         <title>sparkletest</title>
         <item>
-            <title>1.0.22</title>
-            <pubDate>Mon, 23 Jan 2023 17:57:40 -0800</pubDate>
-            <sparkle:version>1.0.22</sparkle:version>
-            <sparkle:shortVersionString>1.0.22</sparkle:shortVersionString>
+            <title>1.0.23</title>
+            <pubDate>Mon, 23 Jan 2023 18:15:10 -0800</pubDate>
+            <sparkle:version>1.0.23</sparkle:version>
+            <sparkle:shortVersionString>1.0.23</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/gurubac/sparkletest/releases/download/v1.0.22/sparkletest.dmg" length="1080698" type="application/octet-stream" sparkle:edSignature="LQIhVsLjWpJeM23bcePe42YxocS/AcLOa492vbBw7QpWBH7/KVY4A3Rvd/KRAk48GdDGoY4ebyGBpd4zfJvsBg=="/>
-        <sparkle:releaseNotesLink>https://github.com/gurubac/sparkletest/releases/tag/v1.0.22</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/gurubac/sparkletest/releases/download/v1.0.23/sparkletest.dmg" length="1080733" type="application/octet-stream" sparkle:edSignature="Zxs8O/B2C30/uRUxvsdUkMw/9GqV1kjnknMxfPSHaLfmojOzt/hG97mhfYVscTzl6bQZ8L+SpuYy1HWa8/D/CQ=="/>
+        <sparkle:releaseNotesLink>https://github.com/gurubac/sparkletest/releases/tag/v1.0.23</sparkle:releaseNotesLink>
 <sparkle:fullReleaseNotesLink>https://github.com/gurubac/sparkletest/releases</sparkle:fullReleaseNotesLink>
 </item>
     </channel>

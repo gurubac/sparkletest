@@ -15,6 +15,7 @@ The app checks for updates from these Github Releases using Sparkle.
 
 ## How to run it?
 Edit the config variables in the `shellconfig.sh` file. 
+
 To generate a new release of your app and upload to github, run `./deploy_release.sh`
 
 

@@ -19,7 +19,7 @@ Edit the config variables in the `shellconfig.sh` file.
 To generate a new release of your app and upload to github, run `./deploy_release.sh`
 
 
-### Guides that helped me
+## Guides that helped me
 https://github.com/matteospada/Sparkle-test
 
 https://medium.com/@matteospada.m/how-to-integrate-the-sparkle-framework-into-a-swiftui-app-for-macos-98ca029f83f7

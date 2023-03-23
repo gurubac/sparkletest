@@ -6,7 +6,7 @@ I did not want to open Xcode to archive and create a .app file of my MacOS appli
 
 Commands like `agvtool` do not work on newer versions of Xcode like Xcode 14. 
 
-Instead of using these commands, you can just directly edit the CURRENT_PROJECT_VERSION in the `project.pbxproj` file using the `sed` command. 
+Instead of using these commands, you can just directly edit the `CURRENT_PROJECT_VERSION` in the `project.pbxproj` file using the `sed` command. 
 
 These shell scripts automate the whole process of archiving an app, creating a dmg, generating the Sparkle `appcast.xml` file, and uploading to Github Releases. 
 
